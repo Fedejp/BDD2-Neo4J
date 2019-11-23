@@ -1,0 +1,53 @@
+#### Programa de demostración de consumo de base de datos NEO4J ####
+## Respuestas a consultas planteadas en el trabajo práctico ##
+# Consulta 2: todas las unidades alquiladas #
+Edificio: "Caballito Tower" Unidad: "1A"
+Inquilino: "Minisale", "Tomas"
+Edificio: "Caballito Tower" Unidad: "1B"
+Inquilino: "Roitman", "Axel"
+Edificio: "Caballito Tower" Unidad: "2B"
+Inquilino: "Panza", "Matias"
+Edificio: "Caballito Tower" Unidad: "3A"
+Inquilino: "Pommerantz", "Macarena"
+Edificio: "Soho Garden" Unidad: "1A"
+Inquilino: "Abad", "Fernando"
+Edificio: "Soho Garden" Unidad: "1B"
+Inquilino: "Chaitmann", "Carlos"
+Edificio: "Soho Garden" Unidad: "2A"
+Inquilino: "Pazzarelli", "Gianina"
+Edificio: "Alejandro 1" Unidad: "1B"
+Inquilino: "Torres", "Gabriel"
+Edificio: "Alejandro 1" Unidad: "2A"
+Inquilino: "Malicki", "Belen"
+Edificio: "Alejandro 1" Unidad: "3A"
+Inquilino: "Ritunano", "Diego"
+--------------------------------------------
+# Consulta 6: Monto a pagar de expensas por un dueño dado #
+Dueño dado: DNI 123
+Dueño: "Parodi", "Federico"
+Total a pagar: $18000
+## Funciones CRUD ##
+# Creación de un edificio (edificio + unidades) #
+Ingrese nombre del edificio: Arenales Premier
+Ingrese un nombre corto para el  edificio (Abreviatura de no más de 3 alfanuméricos): ARP
+Ingrese la dirección del edificio: Arenales 2324
+Ingrese la cantidad de pisos del edificio (Máximo 20): 6
+Ingrese la cantidad de unidades por piso del edificio (Máximo 3): 3
+Ingrese valor de expensas para unidades 'A': $1564
+Ingrese valor de expensas para unidades 'B': $123
+Ingrese valor de expensas para unidades 'C': $2358
+AVISO: todas las unidades se crearán con estado 'En venta' de forma predeterminada. Cualquier modificación deberá realizarse a posterirori
+Edificio 'Arenales Premier' (con 18 unidades) Creado!
+# Demostración de creado / lectura de un edificio: #
+Edificio: "Arenales Premier"
+Lista de Unidades: "4C", "5C", "1B", "6C", "6B", "1C", "6A", "3C", "4B", "2C", "3B", "2B", "3A", "2A", "5A", "5B", "1A", "4A", 
+# Actualizacion de un edificio (cambio de nombre) #
+Ingrese un nuevo nombre para el edificio de código 'ARP': Arena de playa
+# Demostración de actualizado: #
+Edificio: "Arena de playa"
+Lista de Unidades: "4C", "5C", "1B", "6C", "6B", "1C", "6A", "3C", "4B", "2C", "3B", "2B", "3A", "2A", "5A", "5B", "1A", "4A", 
+# Eliminación del edificio dado #
+El edificio ARP ha sido eliminado.
+# Demostración de eliminad / lectura de un edificio inexistente: #
+No existe el edificio 'ARP'.
+#### Fin del programa de prueba ####
